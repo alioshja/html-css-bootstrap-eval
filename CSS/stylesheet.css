@@ -1,0 +1,164 @@
+/* media queries pour oriantation portrait sur smartphone */
+@media (orientation: portrait) {
+    /* sélécteur général sur le body pour donner une image de fond crée par mes soins pour la version mobile */
+    body {
+        background-image: url("../images-aidafr/fond-ecran-android-aid-afri.jpg");
+        background-size: 100% 100%;
+        font-size: 3vh;
+    }
+
+    body>h1 {
+        font-size: 8em;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+        /* classes pour dimension des images et les faires disparaitres*/
+    
+    .tailleimgg {
+        height: 0%;
+        width: 0%;
+    }
+
+    article>p {
+        color: rgb(60, 60, 177);
+        font-size:2vh;
+    }
+    /* classe crée pour les balises A */
+.a111 {
+    margin: auto;
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(241, 241, 241);
+    padding: 1vh 1vw;
+    border-radius: 1vh;
+    width: 34vw;
+    min-height: 11vh;
+    max-height: 16vh;
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1em;
+}
+}
+
+/* media queries pour oriantation paysage sur smartphone et pour les écrans en général*/
+@media screen and (orientation: landscape) {
+    body {
+        margin: auto;
+        text-align: center;
+    }
+
+    body>a {
+        font-size: 2vw;
+    }
+
+    /* classes pour dimension des images de droite et en dessous pour la gauche */
+
+    .imggauche {
+        float: left;
+    }
+    .tailleimgg {
+        
+        display: flex;
+        flex-direction: column;
+        height: 18vh;
+        width: 14vw;
+        border-radius: 2vh;
+        margin-bottom: 12vh;
+        max-width: 300px;
+        max-height: 180px;
+    }
+
+    .imgdroite {
+        float: right;
+    }
+
+    /* sélécteur complexe qui a effect sur la couleur des paragraphes dans les articles */
+article>p {
+    color: rgb(60, 60, 177);
+    font-size:2vw;
+}
+
+/* classe crée pour les balises A */
+.a111 {
+    margin: auto;
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(241, 241, 241);
+    padding: 1vh 1vw;
+    border-radius: 1vh;
+    max-width: 25vw;
+    max-height: 10vh;
+}
+h1 {
+    font-size: 3em;
+}
+}
+
+/*parti on il y a les classe générales et les sélecteurs*/
+.header {
+    background-color: rgb(255, 135, 65);
+    width: 100%;
+    height: auto;
+}
+
+html {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: rgb(168, 219, 219);
+}
+
+main {
+    display: block;
+    background-color: rgb(255, 225, 160);
+    box-shadow: 1vw 1vw 8vw rgb(145, 155, 158);
+    border: 2px solid rgb(255, 135, 65);
+    border-radius: 2vw;
+    height: auto;
+    max-width: 80%;
+    text-shadow: 1vh 1vh 4VH grey;
+    font-size: 2vh;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    width: 100%;
+    background-color: rgb(255, 135, 65);
+    border-bottom-right-radius: 2vh;
+    text-align: center;
+    justify-content: space-around;
+}
+
+/* classe dédié a la coloration des écritures */
+.FV {
+    color: blueviolet;
+}
+
+footer {
+    background-color: rgb(255, 135, 65);
+}
+
+.pad {
+    padding-bottom: 15VH;
+}
+
+.mar {
+    margin:0%;
+}
+
+video {
+    height: auto;
+    width: 90%;
+}
